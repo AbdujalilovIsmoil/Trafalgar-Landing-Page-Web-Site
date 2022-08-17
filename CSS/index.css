@@ -364,4 +364,42 @@ body {
   color: var(--main-link-color);
 }
 
+.section__mobile_box_title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  mix-blend-mode: normal;
+  color: var(--main-title-color);
+  max-width: 254px;
+  width: 100%;
+}
+
+.section__mobile_box_paragraph{
+  max-width: 390px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--main-paragraph-color);
+  mix-blend-mode: normal;
+}
+
+.section__mobile_box_link{
+  mix-blend-mode: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 60px;
+  color: var(--main-link-bg-color);
+  border: 1.4px solid var(--main-link-bg-color);
+  border-radius: 55px;
+  display: inline-block;
+  max-width: 200px;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ****SECTION END**** */
