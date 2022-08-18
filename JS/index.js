@@ -44,8 +44,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   function Slider() {
     if (index > carouselCards.length - 1) {
-      ColorsHidden();
       index = carouselCards.length - 1;
+      ColorsHidden();
     } else if (index < 0) {
       index = 0;
       ColorsShow();
