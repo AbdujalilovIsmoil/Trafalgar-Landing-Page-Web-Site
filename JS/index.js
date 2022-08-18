@@ -1,4 +1,13 @@
 window.addEventListener("DOMContentLoaded", () => {
+  let loader = document.querySelector(".loader");
+
+  setTimeout(() => {
+    loader.style.opacity = 0;
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500);
+  }, 2000);
+
   window.addEventListener("scroll", () => {
     let header = document.querySelector(".header");
     header.classList.toggle("active", window.scrollY > 0);
@@ -96,4 +105,6 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  AOS.init();
 });
