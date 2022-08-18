@@ -1561,7 +1561,7 @@ body {
 
   .section__article_box {
     width: 300px;
-    height: 625px;
+    height: 500px;
     background: var(--main-link-color);
     box-shadow: 10px 40px 50px rgb(229 233 246 / 70%);
     border-radius: 5% 5% 5% 5%;
