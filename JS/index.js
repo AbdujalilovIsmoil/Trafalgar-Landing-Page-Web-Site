@@ -1,4 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
+  // Loader
   let loader = document.querySelector(".loader");
 
   setTimeout(() => {
@@ -8,15 +9,16 @@ window.addEventListener("DOMContentLoaded", () => {
     }, 500);
   }, 2000);
 
+  // Scroll
   window.addEventListener("scroll", () => {
     let header = document.querySelector(".header");
     header.classList.toggle("active", window.scrollY > 0);
   });
 
+  // Slider
   let faLeft = document.querySelector(".fa-arrow-left");
   let faRight = document.querySelector(".fa-arrow-right");
   let carouselCards = document.querySelectorAll(".section__carousel");
-
   let index = 0;
 
   function hideRight() {
@@ -69,6 +71,7 @@ window.addEventListener("DOMContentLoaded", () => {
     showLeft();
   });
 
+  // Dots Carousel
   let dot = document.querySelector(".section__carousel_dots_container");
   let dots = dot.querySelectorAll(".section__carousel_box_dot_box");
 
@@ -106,5 +109,42 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // AOS Library
   AOS.init();
+
+  // Menu
+  let faBars = document.querySelector(".fa-bars");
+  let faTimes = document.querySelector(".fa-times");
+  let secretNavbar = document.querySelector(".secret");
+  let secretLinks = document.querySelectorAll(".secret__link");
+
+  function openShowNavbar() {
+    secretNavbar.classList.add("active");
+    document.querySelector("body").style.overflow = "hidden";
+  }
+
+  function CloseHideNavbar() {
+    secretNavbar.classList.remove("active");
+    document.querySelector("body").style.overflow = "";
+  }
+
+  faBars.addEventListener("click", () => {
+    openShowNavbar();
+  });
+
+  faTimes.addEventListener("click", () => {
+    CloseHideNavbar();
+  });
+
+  secretLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      CloseHideNavbar();
+    });
+  });
+
+  this.addEventListener("keydown", (event) => {
+    if (event.code == "Escape") {
+      CloseHideNavbar();
+    }
+  });
 });
