@@ -1,700 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- ****MAIN META TAGS**** -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ***FAVICON ICON**** -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./FAVICON/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./FAVICON/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./FAVICON/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./FAVICON/site.webmanifest" />
-    <meta name="author" content="Abdujalilov Ismoil" />
-    <meta name="description" content="Trafalgar beautiful landing page site" />
-    <meta name="og:title" content="Trafalgar" />
-    <meta
-      name="og:description"
-      content="Trafalgar beautiful landing page site"
-    />
-    <meta name="og:image" content="./FAVICON/favicon.ico" />
-    <meta name="og:site_name" content="Trafalgar" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- ****MAIN CSS**** -->
-    <link rel="stylesheet" href="./CSS/fonts.css" />
-    <link rel="stylesheet" href="./CSS/index.css" />
-    <title>Trafalgar</title>
-  </head>
-  <body>
-    <!-- ****LOADER START**** -->
-    <div class="loader">
-      <div class="lds-ellipsis">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <!-- ****LOADER START**** -->
 
-    <!-- ****SECRET HEADER START**** -->
-    <div class="secret">
-      <ul class="secret__list">
-        <li class="secret__item">
-          <a class="secret__link" href="#"> Home </a>
-        </li>
-        <li class="secret__item">
-          <a class="secret__link" href="#Find a doctor"> Find a doctor </a>
-        </li>
-        <li class="secret__item">
-          <a class="secret__link" href="#Apps"> Apps </a>
-        </li>
-        <li class="secret__item">
-          <a class="secret__link" href="#Testimonials"> Testimonials </a>
-        </li>
-        <li class="secret__item">
-          <a class="secret__link" href="#About us"> About us </a>
-        </li>
-      </ul>
-      <i class="fa fa-times"></i>
-    </div>
-    <!-- ****SECRET HEADER END**** -->
-    <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <span class="nav__intro">
-            <a class="nav__intro_link" href="index.html">
-              <img
-                class="nav__img"
-                src="./IMG/LOGO/intro.svg"
-                alt="intro"
-                title="intro"
-              />
-            </a>
-          </span>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link active" href="#"> Home </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#Find a doctor"> Find a doctor </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#Apps"> Apps </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#Testimonials"> Testimonials </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#About us"> About us </a>
-            </li>
-          </ul>
-          <i class="fa fa-bars"></i>
-        </nav>
-      </div>
-    </header>
-    <!-- ****HEADER END**** -->
+<head>
+  <!-- ****MAIN META TAGS**** -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ***FAVICON ICON**** -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./FAVICON/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./FAVICON/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./FAVICON/favicon-16x16.png" />
+  <link rel="manifest" href="./FAVICON/site.webmanifest" />
+  <meta name="author" content="Abdujalilov Ismoil" />
+  <meta name="description" content="Trafalgar beautiful landing page site" />
+  <meta name="og:title" content="Trafalgar" />
+  <meta name="og:description" content="Trafalgar beautiful landing page site" />
+  <meta name="og:image" content="./FAVICON/favicon.ico" />
+  <meta name="og:site_name" content="Trafalgar" />
+  <!-- ****CDNJS LIBRARY**** -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ****AOS ANIMATION LIBRARY**** -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- ****NORMALIZE CSS**** -->
+  <link rel="stylesheet" href="./CSS/normalize.css">
+  <!-- ****MAIN CSS**** -->
+  <link rel="stylesheet" href="./CSS/fonts.css" />
+  <!-- ****INDEX MIN CSS**** -->
+  <link rel="stylesheet" href="./CSS/index.min.css" />
+  <title>Trafalgar</title>
+</head>
 
-    <!-- ****MAIN START*** -->
-    <main class="main">
-      <div class="main__element"></div>
-      <div class="container">
-        <div class="main__container">
-          <div class="main__box">
-            <h1 class="main__box_title">Virtual healthcare for you</h1>
-            <p class="main__box_paragraph">
-              Trafalgar provides progressive, and affordable healthcare,
-              accessible on mobile and online for everyone
-            </p>
-            <a class="main__box_link" href="#"> Consult today </a>
-          </div>
-          <div class="main__box active">
-            <img
-              class="main__box_img"
-              src="./IMG/main/main-img.svg"
-              alt="main-img"
-              title="main-img"
-            />
-          </div>
+<body>
+  <!-- ****LOADER START**** -->
+  <div class="loader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- ****LOADER START**** -->
+
+  <!-- ****SECRET HEADER START**** -->
+  <div class="secret">
+    <ul class="secret__list">
+      <li class="secret__item">
+        <a class="secret__link" href="#"> Home </a>
+      </li>
+      <li class="secret__item">
+        <a class="secret__link" href="#Find a doctor"> Find a doctor </a>
+      </li>
+      <li class="secret__item">
+        <a class="secret__link" href="#Apps"> Apps </a>
+      </li>
+      <li class="secret__item">
+        <a class="secret__link" href="#Testimonials"> Testimonials </a>
+      </li>
+      <li class="secret__item">
+        <a class="secret__link" href="#About us"> About us </a>
+      </li>
+    </ul>
+    <i class="fa fa-times"></i>
+  </div>
+  <!-- ****SECRET HEADER END**** -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <span class="nav__intro">
+          <a class="nav__intro_link" href="index.html">
+            <img class="nav__img" src="./IMG/LOGO/intro.svg" alt="intro" title="intro" />
+          </a>
+        </span>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link active" href="#"> Home </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#Find a doctor"> Find a doctor </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#Apps"> Apps </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#Testimonials"> Testimonials </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#About us"> About us </a>
+          </li>
+        </ul>
+        <i class="fa fa-bars"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- ****HEADER END**** -->
+
+  <!-- ****MAIN START*** -->
+  <main class="main">
+    <div class="main__element"></div>
+    <div class="container">
+      <div class="main__container">
+        <div class="main__box">
+          <h1 class="main__box_title">Virtual healthcare for you</h1>
+          <p class="main__box_paragraph">
+            Trafalgar provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone
+          </p>
+          <a class="main__box_link" href="#"> Consult today </a>
+        </div>
+        <div class="main__box active">
+          <img class="main__box_img" src="./IMG/main/main-img.svg" alt="main-img" title="main-img" />
         </div>
       </div>
-    </main>
-    <!-- ****MAIN END*** -->
+    </div>
+  </main>
+  <!-- ****MAIN END*** -->
 
-    <!-- ****SECTION START*** -->
-    <section class="section">
-      <div class="container">
-        <div
-          class="section__content"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="500"
-        >
-          <h1 class="section__content_title" id="Find a doctor">
-            Our services
-          </h1>
-          <p class="section__content_paragraph">
-            We provide to you the best choiches for you. Adjust it to your
-            health needs and make sure your undergo treatment with our highly
-            qualified doctors you can consult with us which type of service is
-            suitable for your health
+  <!-- ****SECTION START*** -->
+  <section class="section">
+    <div class="container">
+      <div class="section__content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <h1 class="section__content_title" id="Find a doctor">
+          Our services
+        </h1>
+        <p class="section__content_paragraph">
+          We provide to you the best choiches for you. Adjust it to your
+          health needs and make sure your undergo treatment with our highly
+          qualified doctors you can consult with us which type of service is
+          suitable for your health
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- ****SECTION END*** -->
+
+  <!-- ****SECTION START*** -->
+  <section class="section first">
+    <div class="container">
+      <div class="section__card_container">
+        <div class="section__card_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <img class="section__card_box_img" src="./IMG/section/icons/icon1.svg" alt="icon1.svg" title="icon1.svg" />
+          <h1 class="section__card_box_title">Online pharmacy</h1>
+          <p class="section__card_box_paragraph">
+            Buy your medicines with our mobile application with a simple
+            delivery system
+          </p>
+        </div>
+        <div class="section__card_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <img class="section__card_box_img" src="./IMG/section/icons/icon2.svg" alt="icon2.svg" title="icon2.svg" />
+          <h1 class="section__card_box_title">Online pharmacy</h1>
+          <p class="section__card_box_paragraph">
+            Buy your medicines with our mobile application with a simple
+            delivery system
+          </p>
+        </div>
+        <div class="section__card_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <img class="section__card_box_img" src="./IMG/section/icons/icon3.svg" alt="icon3.svg" title="icon3.svg" />
+          <h1 class="section__card_box_title">Consultation</h1>
+          <p class="section__card_box_paragraph">
+            Free consultation with our trusted doctors and get the best
+            recomendations
+          </p>
+        </div>
+        <div class="section__card_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <img class="section__card_box_img" src="./IMG/section/icons/icon4.svg" alt="icon4.svg" title="icon4.svg" />
+          <h1 class="section__card_box_title">Details info</h1>
+          <p class="section__card_box_paragraph">
+            Free consultation with our trusted doctors and get the best
+            recomendations
+          </p>
+        </div>
+        <div class="section__card_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <img class="section__card_box_img" src="./IMG/section/icons/icon5.svg" alt="icon5.svg" title="icon5.svg" />
+          <h1 class="section__card_box_title">Emergency care</h1>
+          <p class="section__card_box_paragraph">
+            You can get 24/7 urgent care for yourself or your children and
+            your lovely family
+          </p>
+        </div>
+        <div class="section__card_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <img class="section__card_box_img" src="./IMG/section/icons/icon6.svg" alt="icon6.svg" title="icon6.svg" />
+          <h1 class="section__card_box_title">Tracking</h1>
+          <p class="section__card_box_paragraph">
+            Track and save your medical history and health data
           </p>
         </div>
       </div>
-    </section>
-    <!-- ****SECTION END*** -->
+      <span class="section__card_small_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <a class="section__card_small_box_link" href="#"> Learn more </a>
+      </span>
+    </div>
+  </section>
+  <!-- ****SECTION END*** -->
 
-    <!-- ****SECTION START*** -->
-    <section class="section first">
-      <div class="container">
-        <div class="section__card_container">
-          <div
-            class="section__card_box"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <img
-              class="section__card_box_img"
-              src="./IMG/section/icons/icon1.svg"
-              alt="icon1.svg"
-              title="icon1.svg"
-            />
-            <h1 class="section__card_box_title">Online pharmacy</h1>
-            <p class="section__card_box_paragraph">
-              Buy your medicines with our mobile application with a simple
-              delivery system
-            </p>
-          </div>
-          <div
-            class="section__card_box"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <img
-              class="section__card_box_img"
-              src="./IMG/section/icons/icon2.svg"
-              alt="icon2.svg"
-              title="icon2.svg"
-            />
-            <h1 class="section__card_box_title">Online pharmacy</h1>
-            <p class="section__card_box_paragraph">
-              Buy your medicines with our mobile application with a simple
-              delivery system
-            </p>
-          </div>
-          <div
-            class="section__card_box"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <img
-              class="section__card_box_img"
-              src="./IMG/section/icons/icon3.svg"
-              alt="icon3.svg"
-              title="icon3.svg"
-            />
-            <h1 class="section__card_box_title">Consultation</h1>
-            <p class="section__card_box_paragraph">
-              Free consultation with our trusted doctors and get the best
-              recomendations
-            </p>
-          </div>
-          <div
-            class="section__card_box"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <img
-              class="section__card_box_img"
-              src="./IMG/section/icons/icon4.svg"
-              alt="icon4.svg"
-              title="icon4.svg"
-            />
-            <h1 class="section__card_box_title">Details info</h1>
-            <p class="section__card_box_paragraph">
-              Free consultation with our trusted doctors and get the best
-              recomendations
-            </p>
-          </div>
-          <div
-            class="section__card_box"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <img
-              class="section__card_box_img"
-              src="./IMG/section/icons/icon5.svg"
-              alt="icon5.svg"
-              title="icon5.svg"
-            />
-            <h1 class="section__card_box_title">Emergency care</h1>
-            <p class="section__card_box_paragraph">
-              You can get 24/7 urgent care for yourself or your children and
-              your lovely family
-            </p>
-          </div>
-          <div
-            class="section__card_box"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <img
-              class="section__card_box_img"
-              src="./IMG/section/icons/icon6.svg"
-              alt="icon6.svg"
-              title="icon6.svg"
-            />
-            <h1 class="section__card_box_title">Tracking</h1>
-            <p class="section__card_box_paragraph">
-              Track and save your medical history and health data
-            </p>
-          </div>
+  <!-- ****SECTION START**** -->
+  <section class="section">
+    <div class="container">
+      <div class="section__providers_container">
+        <div class="section__providers_box active" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+          <img class="section__providers_box_img" src="./IMG/section/providers/providers-img.svg" alt="providers-img"
+            title="providers-img" />
         </div>
-        <span
-          class="section__card_small_box"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="500"
-        >
-          <a class="section__card_small_box_link" href="#"> Learn more </a>
-        </span>
-      </div>
-    </section>
-    <!-- ****SECTION END*** -->
-
-    <!-- ****SECTION START**** -->
-    <section class="section">
-      <div class="container">
-        <div class="section__providers_container">
-          <div
-            class="section__providers_box active"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <img
-              class="section__providers_box_img"
-              src="./IMG/section/providers/providers-img.svg"
-              alt="providers-img"
-              title="providers-img"
-            />
-          </div>
-          <div
-            class="section__providers_box"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <h1 class="section__providers_box_title">
-              Leading healthcare providers
-            </h1>
-            <p class="section__providers_box_paragraph">
-              Trafalgar provides progressive, and affordable healthcare,
-              accessible on mobile and online for everyone. To us, it’s not just
-              work. We take pride in the solutions we deliver
-            </p>
-            <a class="section__providers_box_link" href="#"> Learn more </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ****SECTION END**** -->
-
-    <!-- ****SECTION START**** -->
-    <section class="section">
-      <div class="container">
-        <div class="section__mobile_container" id="Apps">
-          <div
-            class="section__mobile_box"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <h1 class="section__mobile_box_title">Download our mobile apps</h1>
-            <p class="section__mobile_box_paragraph">
-              Our dedicated patient engagement app and web portal allow you to
-              access information instantaneously (no tedeous form, long calls,
-              or administrative hassle) and securely
-            </p>
-            <a class="section__mobile_box_link" href="#"> Download </a>
-          </div>
-          <div
-            class="section__mobile_box active"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <img
-              class="section__mobile_box_img"
-              src="./IMG/section/mobile/mobile-img.svg"
-              alt="mobile-img"
-              title="mobile-img"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ****SECTION END**** -->
-
-    <!-- ****SECTION START**** -->
-    <section class="section second" id="Testimonials">
-      <div class="container">
-        <div
-          class="section__carousel_big_container"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          data-aos-delay="500"
-        >
-          <div class="section__carousel">
-            <span class="section__carousel_small_box">
-              <h1 class="section__carousel_small_box_title">
-                What our customer are saying
-              </h1>
-            </span>
-            <div class="section__carousel_content_container">
-              <div class="section__carousel_content_box active">
-                <img
-                  class="section__carousel_content_box_img"
-                  src="./IMG/section/carousel/carousel-person-img.jpg"
-                  alt="carousel-person-img"
-                  title="carousel-person-img"
-                />
-                <div class="section__carousel_content_box_content">
-                  <h1 class="section__carousel_content_box_title">
-                    Edward Newgate
-                  </h1>
-                  <p class="section__carousel_content_box_paragraph">
-                    Founder Circle
-                  </p>
-                </div>
-              </div>
-              <div class="section__carousel_content_box">
-                <p class="section__carousel_content_box_paragraph_second">
-                  “Our dedicated patient engagement app and web portal allow you
-                  to access information instantaneously (no tedeous form, long
-                  calls, or administrative hassle) and securely”
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="section__carousel">
-            <span class="section__carousel_small_box">
-              <h1 class="section__carousel_small_box_title">
-                What our customer are saying
-              </h1>
-            </span>
-            <div class="section__carousel_content_container">
-              <div class="section__carousel_content_box active">
-                <img
-                  class="section__carousel_content_box_img"
-                  src="./IMG/section/carousel/carousel-person-img.jpg"
-                  alt="carousel-person-img"
-                  title="carousel-person-img"
-                />
-                <div class="section__carousel_content_box_content">
-                  <h1 class="section__carousel_content_box_title">
-                    Edward Newgate
-                  </h1>
-                  <p class="section__carousel_content_box_paragraph">
-                    Founder Circle
-                  </p>
-                </div>
-              </div>
-              <div class="section__carousel_content_box">
-                <p class="section__carousel_content_box_paragraph_second">
-                  “Our dedicated patient engagement app and web portal allow you
-                  to access information instantaneously (no tedeous form, long
-                  calls, or administrative hassle) and securely”
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="section__carousel">
-            <span class="section__carousel_small_box">
-              <h1 class="section__carousel_small_box_title">
-                What our customer are saying
-              </h1>
-            </span>
-            <div class="section__carousel_content_container">
-              <div class="section__carousel_content_box active">
-                <img
-                  class="section__carousel_content_box_img"
-                  src="./IMG/section/carousel/carousel-person-img.jpg"
-                  alt="carousel-person-img"
-                  title="carousel-person-img"
-                />
-                <div class="section__carousel_content_box_content">
-                  <h1 class="section__carousel_content_box_title">
-                    Edward Newgate
-                  </h1>
-                  <p class="section__carousel_content_box_paragraph">
-                    Founder Circle
-                  </p>
-                </div>
-              </div>
-              <div class="section__carousel_content_box">
-                <p class="section__carousel_content_box_paragraph_second">
-                  “Our dedicated patient engagement app and web portal allow you
-                  to access information instantaneously (no tedeous form, long
-                  calls, or administrative hassle) and securely”
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="section__carousel">
-            <span class="section__carousel_small_box">
-              <h1 class="section__carousel_small_box_title">
-                What our customer are saying
-              </h1>
-            </span>
-            <div class="section__carousel_content_container">
-              <div class="section__carousel_content_box active">
-                <img
-                  class="section__carousel_content_box_img"
-                  src="./IMG/section/carousel/carousel-person-img.jpg"
-                  alt="carousel-person-img"
-                  title="carousel-person-img"
-                />
-                <div class="section__carousel_content_box_content">
-                  <h1 class="section__carousel_content_box_title">
-                    Edward Newgate
-                  </h1>
-                  <p class="section__carousel_content_box_paragraph">
-                    Founder Circle
-                  </p>
-                </div>
-              </div>
-              <div class="section__carousel_content_box">
-                <p class="section__carousel_content_box_paragraph_second">
-                  “Our dedicated patient engagement app and web portal allow you
-                  to access information instantaneously (no tedeous form, long
-                  calls, or administrative hassle) and securely”
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="section__carousel_dots"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          data-aos-delay="500"
-        >
-          <i class="fa-solid fa-arrow-left" id="fa-right"></i>
-          <div class="section__carousel_dots_container">
-            <div class="section__carousel_box_dot_box active"></div>
-            <div class="section__carousel_box_dot_box"></div>
-            <div class="section__carousel_box_dot_box"></div>
-            <div class="section__carousel_box_dot_box"></div>
-          </div>
-          <i class="fa-solid fa-arrow-right" id="fa-right"></i>
-        </div>
-      </div>
-    </section>
-    <!-- ****SECTION END**** -->
-
-    <!-- ****SECTION START**** -->
-    <section class="section third" id="About us">
-      <div class="container">
-        <span
-          class="section__aritcle_small_box"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          data-aos-delay="500"
-        >
-          <h1 class="section__article_small_box_title">
-            Check out our latest article
+        <div class="section__providers_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+          <h1 class="section__providers_box_title">
+            Leading healthcare providers
           </h1>
-        </span>
-        <div class="section__article_container">
-          <div
-            class="section__article_box"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <img
-              class="section__article_box_img"
-              src="./IMG/section/card/card1.jpg"
-              alt="card1"
-              title="card1"
-            />
-            <h1 class="section__article_box_title">
-              Disease detection, check up in the laboratory
-            </h1>
-            <p class="section__article_box_paragraph">
-              In this case, the role of the health laboratory is very important
-              to do a disease detection...
-            </p>
-            <a class="section__article_box_link" href="#">
-              Read more <i class="fa-solid fa-arrow-right" id="fa-right"></i>
-            </a>
-          </div>
-          <div
-            class="section__article_box"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <img
-              class="section__article_box_img"
-              src="./IMG/section/card/card2.jpg"
-              alt="card2"
-              title="card2"
-            />
-            <h1 class="section__article_box_title">
-              Herbal medicines that are safe for consumption
-            </h1>
-            <p class="section__article_box_paragraph">
-              Herbal medicine is very widely used at this time because of its
-              very good for your health...
-            </p>
-            <a class="section__article_box_link" href="#">
-              Read more <i class="fa-solid fa-arrow-right" id="fa-right"></i>
-            </a>
-          </div>
-          <div
-            class="section__article_box"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <img
-              class="section__article_box_img"
-              src="./IMG/section/card/card3.jpg"
-              alt="card3"
-              title="card3"
-            />
-            <h1 class="section__article_box_title">
-              Natural care for healthy facial skin
-            </h1>
-            <p class="section__article_box_paragraph">
-              A healthy lifestyle should start from now and also for your skin
-              health. There are some...
-            </p>
-            <a class="section__article_box_link" href="#">
-              Read more <i class="fa-solid fa-arrow-right" id="fa-right"></i>
-            </a>
-          </div>
-        </div>
-        <span class="section__small_box_links">
-          <a class="section__small_box_link" href="#"> View all </a>
-        </span>
-      </div>
-    </section>
-    <!-- ****SECTION END**** -->
-
-    <!-- ****FOOTER START**** -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__container">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__item_intro" href="#">
-                <img
-                  class="footer__item_intro_img"
-                  src="./IMG/LOGO/footer-logo.svg"
-                  alt="footer-logo"
-                  title="footer-logo"
-                />
-              </a>
-            </li>
-            <li class="footer__item">
-              <p class="footer__item_paragraph">
-                Trafalgar provides progressive, and affordable healthcare,
-                accessible on mobile and online for everyone
-              </p>
-            </li>
-            <li class="footer__item">
-              <p class="footer__item_paragraph">
-                ©Trafalgar PTY LTD 2020. All rights reserved
-              </p>
-            </li>
-          </ul>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <p class="footer__paragraph_active">Company</p>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#About us"> About </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#Testimonials"> Testimonials </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#Find a doctor"> Find a doctor </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#Apps"> Apps </a>
-            </li>
-          </ul>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <p class="footer__paragraph_active">Region</p>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#"> Indonesia </a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link"> Singapore </a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link"> Hongkong </a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link"> Canada </a>
-            </li>
-          </ul>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <p class="footer__paragraph_active">Help</p>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#"> Help center </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#"> Contact support </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#"> Instructions </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#"> How it works </a>
-            </li>
-          </ul>
+          <p class="section__providers_box_paragraph">
+            Trafalgar provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone. To us, it’s not just
+            work. We take pride in the solutions we deliver
+          </p>
+          <a class="section__providers_box_link" href="#"> Learn more </a>
         </div>
       </div>
-    </footer>
-    <!-- ****FOOTER END**** -->
+    </div>
+  </section>
+  <!-- ****SECTION END**** -->
 
-    <script src="./JS/index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  </body>
+  <!-- ****SECTION START**** -->
+  <section class="section">
+    <div class="container">
+      <div class="section__mobile_container" id="Apps">
+        <div class="section__mobile_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+          <h1 class="section__mobile_box_title">Download our mobile apps</h1>
+          <p class="section__mobile_box_paragraph">
+            Our dedicated patient engagement app and web portal allow you to
+            access information instantaneously (no tedeous form, long calls,
+            or administrative hassle) and securely
+          </p>
+          <a class="section__mobile_box_link" href="#"> Download </a>
+        </div>
+        <div class="section__mobile_box active" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+          <img class="section__mobile_box_img" src="./IMG/section/mobile/mobile-img.svg" alt="mobile-img"
+            title="mobile-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****SECTION END**** -->
+
+  <!-- ****SECTION START**** -->
+  <section class="section second" id="Testimonials">
+    <div class="container">
+      <div class="section__carousel_big_container" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+        <div class="section__carousel">
+          <span class="section__carousel_small_box">
+            <h1 class="section__carousel_small_box_title">
+              What our customer are saying
+            </h1>
+          </span>
+          <div class="section__carousel_content_container">
+            <div class="section__carousel_content_box active">
+              <img class="section__carousel_content_box_img" src="./IMG/section/carousel/carousel-person-img.jpg"
+                alt="carousel-person-img" title="carousel-person-img" />
+              <div class="section__carousel_content_box_content">
+                <h1 class="section__carousel_content_box_title">
+                  Edward Newgate
+                </h1>
+                <p class="section__carousel_content_box_paragraph">
+                  Founder Circle
+                </p>
+              </div>
+            </div>
+            <div class="section__carousel_content_box">
+              <p class="section__carousel_content_box_paragraph_second">
+                “Our dedicated patient engagement app and web portal allow you
+                to access information instantaneously (no tedeous form, long
+                calls, or administrative hassle) and securely”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section__carousel">
+          <span class="section__carousel_small_box">
+            <h1 class="section__carousel_small_box_title">
+              What our customer are saying
+            </h1>
+          </span>
+          <div class="section__carousel_content_container">
+            <div class="section__carousel_content_box active">
+              <img class="section__carousel_content_box_img" src="./IMG/section/carousel/carousel-person-img.jpg"
+                alt="carousel-person-img" title="carousel-person-img" />
+              <div class="section__carousel_content_box_content">
+                <h1 class="section__carousel_content_box_title">
+                  Edward Newgate
+                </h1>
+                <p class="section__carousel_content_box_paragraph">
+                  Founder Circle
+                </p>
+              </div>
+            </div>
+            <div class="section__carousel_content_box">
+              <p class="section__carousel_content_box_paragraph_second">
+                “Our dedicated patient engagement app and web portal allow you
+                to access information instantaneously (no tedeous form, long
+                calls, or administrative hassle) and securely”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section__carousel">
+          <span class="section__carousel_small_box">
+            <h1 class="section__carousel_small_box_title">
+              What our customer are saying
+            </h1>
+          </span>
+          <div class="section__carousel_content_container">
+            <div class="section__carousel_content_box active">
+              <img class="section__carousel_content_box_img" src="./IMG/section/carousel/carousel-person-img.jpg"
+                alt="carousel-person-img" title="carousel-person-img" />
+              <div class="section__carousel_content_box_content">
+                <h1 class="section__carousel_content_box_title">
+                  Edward Newgate
+                </h1>
+                <p class="section__carousel_content_box_paragraph">
+                  Founder Circle
+                </p>
+              </div>
+            </div>
+            <div class="section__carousel_content_box">
+              <p class="section__carousel_content_box_paragraph_second">
+                “Our dedicated patient engagement app and web portal allow you
+                to access information instantaneously (no tedeous form, long
+                calls, or administrative hassle) and securely”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section__carousel">
+          <span class="section__carousel_small_box">
+            <h1 class="section__carousel_small_box_title">
+              What our customer are saying
+            </h1>
+          </span>
+          <div class="section__carousel_content_container">
+            <div class="section__carousel_content_box active">
+              <img class="section__carousel_content_box_img" src="./IMG/section/carousel/carousel-person-img.jpg"
+                alt="carousel-person-img" title="carousel-person-img" />
+              <div class="section__carousel_content_box_content">
+                <h1 class="section__carousel_content_box_title">
+                  Edward Newgate
+                </h1>
+                <p class="section__carousel_content_box_paragraph">
+                  Founder Circle
+                </p>
+              </div>
+            </div>
+            <div class="section__carousel_content_box">
+              <p class="section__carousel_content_box_paragraph_second">
+                “Our dedicated patient engagement app and web portal allow you
+                to access information instantaneously (no tedeous form, long
+                calls, or administrative hassle) and securely”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section__carousel_dots" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+        <i class="fa-solid fa-arrow-left" id="fa-left"></i>
+        <div class="section__carousel_dots_container">
+          <div class="section__carousel_box_dot_box active"></div>
+          <div class="section__carousel_box_dot_box"></div>
+          <div class="section__carousel_box_dot_box"></div>
+          <div class="section__carousel_box_dot_box"></div>
+        </div>
+        <i class="fa-solid fa-arrow-right" id="fa-right"></i>
+      </div>
+    </div>
+  </section>
+  <!-- ****SECTION END**** -->
+
+  <!-- ****SECTION START**** -->
+  <section class="section third" id="About us">
+    <div class="container">
+      <span class="section__aritcle_small_box" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+        <h1 class="section__article_small_box_title">
+          Check out our latest article
+        </h1>
+      </span>
+      <div class="section__article_container">
+        <div class="section__article_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+          <img class="section__article_box_img" src="./IMG/section/card/card1.jpg" alt="card1" title="card1" />
+          <h1 class="section__article_box_title">
+            Disease detection, check up in the laboratory
+          </h1>
+          <p class="section__article_box_paragraph">
+            In this case, the role of the health laboratory is very important
+            to do a disease detection...
+          </p>
+          <a class="section__article_box_link" href="#">
+            Read more <i class="fa-solid fa-arrow-right" id="fa-right"></i>
+          </a>
+        </div>
+        <div class="section__article_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+          <img class="section__article_box_img" src="./IMG/section/card/card2.jpg" alt="card2" title="card2" />
+          <h1 class="section__article_box_title">
+            Herbal medicines that are safe for consumption
+          </h1>
+          <p class="section__article_box_paragraph">
+            Herbal medicine is very widely used at this time because of its
+            very good for your health...
+          </p>
+          <a class="section__article_box_link" href="#">
+            Read more <i class="fa-solid fa-arrow-right" id="fa-right"></i>
+          </a>
+        </div>
+        <div class="section__article_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+          <img class="section__article_box_img" src="./IMG/section/card/card3.jpg" alt="card3" title="card3" />
+          <h1 class="section__article_box_title">
+            Natural care for healthy facial skin
+          </h1>
+          <p class="section__article_box_paragraph">
+            A healthy lifestyle should start from now and also for your skin
+            health. There are some...
+          </p>
+          <a class="section__article_box_link" href="#">
+            Read more <i class="fa-solid fa-arrow-right" id="fa-right"></i>
+          </a>
+        </div>
+      </div>
+      <span class="section__small_box_links">
+        <a class="section__small_box_link" href="#"> View all </a>
+      </span>
+    </div>
+  </section>
+  <!-- ****SECTION END**** -->
+
+  <!-- ****FOOTER START**** -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__item_intro" href="#">
+              <img class="footer__item_intro_img" src="./IMG/LOGO/footer-logo.svg" alt="footer-logo"
+                title="footer-logo" />
+            </a>
+          </li>
+          <li class="footer__item">
+            <p class="footer__item_paragraph">
+              Trafalgar provides progressive, and affordable healthcare,
+              accessible on mobile and online for everyone
+            </p>
+          </li>
+          <li class="footer__item">
+            <p class="footer__item_paragraph">
+              ©Trafalgar PTY LTD 2020. All rights reserved
+            </p>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <p class="footer__paragraph_active">Company</p>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#About us"> About </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#Testimonials"> Testimonials </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#Find a doctor"> Find a doctor </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#Apps"> Apps </a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <p class="footer__paragraph_active">Region</p>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Indonesia </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link"> Singapore </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link"> Hongkong </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link"> Canada </a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <p class="footer__paragraph_active">Help</p>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Help center </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Contact support </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Instructions </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> How it works </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- ****FOOTER END**** -->
+
+  <!-- ****JAVASCRIPT LINKS***** -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./JS/utilits.js"></script>
+  <script src="./JS/index.js"></script>
+</body>
+
 </html>

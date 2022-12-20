@@ -1,142 +1,115 @@
 window.addEventListener("DOMContentLoaded", () => {
   // Loader
-  let loader = document.querySelector(".loader");
-
   setTimeout(() => {
-    loader.style.opacity = 0;
+    $(".loader").style.opacity = 0;
     setTimeout(() => {
-      loader.style.display = "none";
+      $(".loader").style.display = "none";
     }, 500);
   }, 2000);
 
   // Scroll
   window.addEventListener("scroll", () => {
-    let header = document.querySelector(".header");
-    header.classList.toggle("active", window.scrollY > 0);
+    $(".header").classList.toggle("active", window.scrollY > 0);
   });
 
   // Slider
-  let faLeft = document.querySelector(".fa-arrow-left");
-  let faRight = document.querySelector(".fa-arrow-right");
-  let carouselCards = document.querySelectorAll(".section__carousel");
-  let index = 0;
 
-  function hideRight() {
-    if (index == carouselCards.length - 1) {
-      ColorsHidden();
-    }
-  }
-
-  function showLeft() {
-    if (index == 0) {
-      ColorsShow();
-    }
-  }
-
-  function ColorsHidden() {
-    faRight.classList.add("active");
-    faLeft.classList.add("active");
-  }
-  function ColorsShow() {
-    faLeft.classList.remove("active");
-    faRight.classList.remove("active");
-  }
-
-  function Slider() {
-    if (index > carouselCards.length - 1) {
-      index = carouselCards.length - 1;
-      ColorsHidden();
-    } else if (index < 0) {
-      index = 0;
-      ColorsShow();
-    }
-
-    carouselCards.forEach((item) => {
-      item.style.transform = `translateX(${-index * 100}%)`;
-    });
-  }
-
-  faRight.addEventListener("click", () => {
-    index++;
-    Slider();
-    hideDot();
-    showDot(index);
-    hideRight();
-  });
-  faLeft.addEventListener("click", () => {
-    index--;
-    Slider();
-    hideDot();
-    showDot(index);
-    showLeft();
-  });
 
   // Dots Carousel
-  let dot = document.querySelector(".section__carousel_dots_container");
-  let dots = dot.querySelectorAll(".section__carousel_box_dot_box");
+
+  let i = 0;
+
+  const Slider = (index) => {
+    for (let sliders of $$(".section__carousel")) {
+      sliders.style.transform = `translateX(${-index * 100}%)`;
+    }
+  }
 
   function hideDot() {
-    dots.forEach((dot) => {
+    $$(".section__carousel_box_dot_box").forEach((dot) => {
       dot.classList.remove("active");
     });
   }
   function showDot(i = 0) {
-    console.log(i);
-    dots[i].classList.add("active");
+    $$(".section__carousel_box_dot_box")[i].classList.add("active");
   }
   hideDot();
   showDot();
 
-  dot.addEventListener("click", (e) => {
+  $(".section__carousel_dots_container").addEventListener("click", (e) => {
     if (
-      e.target &&
       e.target.classList.contains("section__carousel_box_dot_box")
     ) {
-      dots.forEach((dot, index) => {
+      $$(".section__carousel_box_dot_box").forEach((dot, index) => {
         if (dot == e.target) {
+          i = index;
           hideDot();
-          showDot(index);
+          showDot(i);
         }
       });
     }
   });
 
-  dots.forEach((dot, index) => {
-    dot.addEventListener("click", () => {
-      carouselCards.forEach((item) => {
-        item.style.transform = `translateX(${-index * 100}%)`;
-      });
+  $$(".section__carousel_box_dot_box").forEach((item, index) => {
+    item.addEventListener("click", () => {
+      i = index;
+      Slider(i);
     });
   });
+
+  $("#fa-right").addEventListener("click", () => {
+    i++;
+    if (i > $$(".section__carousel_box_dot_box").length - 1) {
+      i = 0;
+    }
+    Slider(i);
+    hideDot();
+    showDot(i);
+  });
+
+  $("#fa-left").addEventListener("click", () => {
+    i--;
+    if (i < 0) {
+      i = $$(".section__carousel_box_dot_box").length - 1;
+    }
+    Slider(i);
+    hideDot();
+    showDot(i);
+  });
+
+  setInterval(() => {
+    i++;
+    if (i > $$(".section__carousel_box_dot_box").length - 1) {
+      i = 0;
+    }
+    Slider(i);
+    hideDot();
+    showDot(i);
+  }, 2000);
 
   // AOS Library
   AOS.init();
 
   // Menu
-  let faBars = document.querySelector(".fa-bars");
-  let faTimes = document.querySelector(".fa-times");
-  let secretNavbar = document.querySelector(".secret");
-  let secretLinks = document.querySelectorAll(".secret__link");
-
   function openShowNavbar() {
-    secretNavbar.classList.add("active");
-    document.querySelector("body").style.overflow = "hidden";
+    $(".secret").classList.add("active");
+    $("body").style.overflow = "hidden";
   }
 
   function CloseHideNavbar() {
-    secretNavbar.classList.remove("active");
-    document.querySelector("body").style.overflow = "";
+    $(".secret").classList.remove("active");
+    $("body").style.overflow = "";
   }
 
-  faBars.addEventListener("click", () => {
+  $(".fa-bars").addEventListener("click", () => {
     openShowNavbar();
   });
 
-  faTimes.addEventListener("click", () => {
+  $(".fa-times").addEventListener("click", () => {
     CloseHideNavbar();
   });
 
-  secretLinks.forEach((link) => {
+  $$(".secret__link").forEach((link) => {
     link.addEventListener("click", () => {
       CloseHideNavbar();
     });
